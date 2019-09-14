@@ -1,0 +1,49 @@
+<section id="intro">
+	<!-- Header -->
+	<div class="intro-header">
+
+		<div class="grid">
+
+      <div class="column">
+
+      </div>
+
+
+      <div class="column center">
+        <div>
+          <h1>Visual and Light Workshop</h1>
+        
+          <h2>
+            Learn to create visuals with modV and to control lights with luminave. 
+          </h2>
+        </div>
+      </div>
+
+
+
+      <div class="column center">
+          <p>
+              Are you interested in having this workshop? Then please join our waiting list! 
+            </p>
+            <br />
+
+        <form>
+          <input type="email" placeholder="your@email.com"></input>
+          <button type="submit">Get notified!</button>
+        </form>
+
+      </div>
+
+
+
+      <div class="column bottom">
+        {{ if isset .Site.Params "social" }}
+        <ul class="list-inline intro-social-buttons">
+          {{ partial "social.html" . }}
+        </ul>
+        {{ end }}
+      </div>
+
+		</div>
+	</div>
+</section>

@@ -1,0 +1,9 @@
+baseURL = "https://visualandlightworkshop.com/"
+languageCode = "en-us"
+title = "visualandlightworkshop"
+theme = "landing-page"
+
+[[params.social]]
+	title = "github"
+	icon = "github"
+	url = "https://github.com/TimPietrusky/visualandlightworkshop.com"
