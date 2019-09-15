@@ -12,6 +12,7 @@ h3,
 h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  font-size: 1.25em;
 }
 
 a {
@@ -28,7 +29,6 @@ p {
 }
 
 .intro-header {
-  text-align: center;
   color: #f8f8f8;
   background: #462c59 url(../img/visual-and-light-workshop.jpg) no-repeat center center;
   background-size: cover;
@@ -43,6 +43,11 @@ p {
   display: grid;
   height: 100vh;
   grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .center {
@@ -66,7 +71,7 @@ h1 {
   margin: 0 0 .35em 0;
   display: inline-block;
   padding: .15em .5em;
-  font-size: 2.5em;
+  font-size: 3.5em;
 
   background: #000;
   color: #fff;
@@ -75,23 +80,35 @@ h1 {
 h2 {
   font-size: 1.375em;
   margin: 0;
+  line-height: 1.35em;
 }
 
-.play {
+.box {
   background: #fff;
-  padding: 0;
-  border-radius: 50%;
-  display: flex;
-  transition: transform .25s;
+  color: #000;
+  padding: .5em;
 }
 
-.play:hover {
-  transform: scale(1.25);
+a {
+  color: #f00;
+  /* box-shadow: 0 0 0 0.1em #000; */
+  padding: 0 .15em;
+  color: #fff;
+  background: #000;
 }
 
-.play-icon {
-  width: 3.5em;
-  height: 3.5em;
+a:hover {
+  filter: invert(100%);
+}
+
+.button {
+  width: 100%;
+  font: 3em 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: invert(100%);
 }
 
 .intro-social-buttons .icon {
@@ -104,9 +121,8 @@ h2 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
-  .play-icon {
-    width: 3.5em;
-    height: 3.5em;
+  .columns {
+      grid-template-columns: 1fr;
   }
 
   h1 {
@@ -116,7 +132,6 @@ h2 {
   h2 {
     font-size: 1.075em;
   }
-
 
   ul.intro-social-buttons>li {
     margin: 0 .5em .75em 0;
